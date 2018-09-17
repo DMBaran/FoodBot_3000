@@ -33,3 +33,11 @@ body {
   font-size: 4em;
   font-family: 'Jacques Francois Shadow', cursive;
 }
+
+.hours {
+  text-align: center;
+}
+
+.time {
+  color: darkblue;
+}
