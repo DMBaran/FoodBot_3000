@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Food Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow" rel="stylesheet">
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+  <!-- css -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="reset.css" /> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="row Welcome animated fadeInDownBig">
+      <div class="col-xs-12">
+        <h1>
+          <strong>
+            Welcome to FoodBot 3000! <br /> Click button to generate restaurant.
+          </strong>
+        </h1>
+      </div>
+    </div>
+    <div class="row picture">
+      <div class="col-sm-offset-3 col-sm-2 col-xs-12">
+        <img src="./images/breakfast.jpg" alt="" class="img-thumbnail animated bounceInLeft slow">
+        <button type="button" id="breakfast" class="btn btn-info btn-lg animated zoomIn slow">Breakfast</button>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <img src="./images/lunch.jpg" alt="" class="img-thumbnail animated bounceInDown slow">
+        <button type="button" id="lunch" class="btn btn-info btn-lg animated zoomIn slow">Lunch</button>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <img src="./images/dinner.jpg" alt="" class="img-thumbnail animated bounceInRight slow">
+        <button type="button" id="dinner" class="btn btn-info btn-lg animated zoomIn slow">Dinner</button>
+      </div>
+    </div>
+    <div class="row restaurant">
+      <div class="col-xs-12 display">
+        
+      </div>
+    </div>
+  <!-- Javascript -->
+  <script src="food.js"></script>
+</body>
+</html>

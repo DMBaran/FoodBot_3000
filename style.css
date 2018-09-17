@@ -1,0 +1,35 @@
+body {
+  background-color: deepskyblue;
+}
+
+.container {
+  text-align: center;
+}
+
+.Welcome {
+  margin: 20px 0;
+  color: aliceblue;
+  font-family: 'Jacques Francois Shadow', cursive;
+}
+
+.picture {
+  margin-bottom: 20px; 
+}
+
+.btn {
+  border: 1px solid aliceblue;
+}
+
+.btn-info {
+  margin: 40px 0;
+}
+
+.restaurant {
+  text-align: center;
+}
+
+.display {
+  color: fuchsia;
+  font-size: 8em;
+  font-family: 'Jacques Francois Shadow', cursive;
+}
