@@ -86,9 +86,7 @@ breakfast.addEventListener('click', function(event) {
   <p class="animated bounceIn slow duration-2s">
   ${breakfastOnly[randomBreakfast].name}
   </p>
-  `;
-  
-  breakfastOnly[randomBreakfast].name;  
+  `; 
 
 });
 
