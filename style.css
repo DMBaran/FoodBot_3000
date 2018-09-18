@@ -12,16 +12,12 @@ body {
   font-family: 'Jacques Francois Shadow', cursive;
 }
 
-.picture {
-  margin-bottom: 20px; 
-}
-
 .btn {
   border: 1px solid aliceblue;
 }
 
 .btn-info {
-  margin: 40px 0;
+  margin: 30px 0 10px 0;
 }
 
 .restaurant {
@@ -40,4 +36,5 @@ body {
 
 .time {
   color: darkblue;
+  margin: 10px 0;
 }
