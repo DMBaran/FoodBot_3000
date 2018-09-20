@@ -210,12 +210,38 @@ const restaurant = [
   }
 ];
 
-const breakfast = document.getElementById('breakfast');
-const lunch = document.getElementById('lunch');
-const dinner =  document.getElementById('dinner');
+const Breakfast = document.getElementById('breakfast');
+const Lunch = document.getElementById('lunch');
+const Dinner =  document.getElementById('dinner');
 const place = document.querySelector('.display');
 const time = document.querySelector('.time');
 
+var randomRestaurant = function(location) {
+  const specificPlace = restaurant.filter(food => food.type === location)
+  let random = Math.floor(Math.random() * specificPlace.length);
+  console.log(random)
+  place.innerHTML = `
+  <p class="animated bounceIn slow duration-2s">
+  ${specificPlace[random].name}
+  </p>
+  `;
+  time.innerHTML = `
+  <div class="animated bounceInLeft delay-2s">
+    <p>${specificPlace[random].mon}</p>
+    <p>${specificPlace[random].tues}</p>
+    <p>${specificPlace[random].wed}</p>
+    <p>${specificPlace[random].thurs}</p>
+    <p>${specificPlace[random].fri}</p>
+    <p>${specificPlace[random].sat}</p>
+    <p>${specificPlace[random].sun}</p>
+  </div>`;
+};
+
+Breakfast.addEventListener('click', () => randomRestaurant('breakfast'));
+Breakfast.addEventListener('click', () => randomRestaurant('lunch'));
+Breakfast.addEventListener('click', () => randomRestaurant('dinner'));
+
+/*
 breakfast.addEventListener('click', function() {
 
   const breakfastOnly = restaurant.filter(food => food.type === 'breakfast');
@@ -276,4 +302,4 @@ dinner.addEventListener('click', function () {
       <p>${dinnerOnly[randomDinner].sat}</p>
       <p>${dinnerOnly[randomDinner].sun}</p>
     </div>`;
-});
+});*/
