@@ -238,5 +238,5 @@ var randomRestaurant = function(location) {
 };
 
 Breakfast.addEventListener('click', () => randomRestaurant('breakfast'));
-Breakfast.addEventListener('click', () => randomRestaurant('lunch'));
-Breakfast.addEventListener('click', () => randomRestaurant('dinner'));
+Lunch.addEventListener('click', () => randomRestaurant('lunch'));
+Dinner.addEventListener('click', () => randomRestaurant('dinner'));
